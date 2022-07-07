@@ -61,7 +61,7 @@ namespace xtl
             // failed to determine run path
         }
 #elif defined (_WIN32)
-        if (GetModuleFileName(nullptr, buffer, sizeof(buffer)) != 0)
+        if (GetModuleFileNameA(nullptr, buffer, sizeof(buffer)) != 0)
         {
             path = buffer;
         }
